@@ -26,7 +26,7 @@ Before diving in, here are some useful links that may be helpful in your journey
 
 > **Twitter:** Follow [@_unwriter](https://twitter.com/_unwriter) on Twitter for bitdb related announcements
 >
->**Github:** [BitDB Github Repository](https://github.com/21centurymotorcompany/bitd). BitDB is 100% open sourced.
+>**Github:** [BitDB Github Repository](https://github.com/dalijolijo/bitd-btx). BitDB is 100% open sourced.
 >
 >**Telegram:** Have questions? [Join the chat](https://t.me/joinchat/HH1DDQ8pZlSlsdNcKgIcxw) and meet other BitDB users and developers.
 
@@ -197,9 +197,9 @@ In essence, BitDB is a database constructed by a one-way synchronization functio
 
 ![function](assets/function.png)
 
-This means we can reconstruct identical BitDB databases as many times as we want from Bitcoin. If there's a nuclear war and every single BitDB node goes down, as long as there are Bitcoin nodes running, you can recover from the destruction by traversing the transform function through time (ie: the blockchain).
+This means we can reconstruct identical BitDB databases as many times as we want from Bitcoin. If there's a nuclear war and every single BitDB node goes down, as long as there are Bitcore nodes running, you can recover from the destruction by traversing the transform function through time (ie: the blockchain).
 
-- Because BitDB is backed by Bitcoin as canonical storage, it comes with all the benefits of Bitcoin's decentralization (Anyone can reconstruct and run a BitDB node from scratch as long as they have a Bitcoin node)
+- Because BitDB is backed by Bitcoin as canonical storage, it comes with all the benefits of Bitcoin's decentralization (Anyone can reconstruct and run a BitDB node from scratch as long as they have a Bitcore node)
 
 - Because BitDB is powered by MongoDB as index, it comes with all the benefits of NoSQL databases, such as highly flexible and portable query interface and better user experience.
 

@@ -6,7 +6,7 @@ sidebar_label: Run a node
 
 In this section, we will take a look at how you can run your own BitDB node.
 
-> Note that you DO NOT have to run a node to use BitDB. Just like how not everyone needs to run a Bitcoin full node, you do not need to have to run BitDB full node.
+> Note that you DO NOT have to run a node to use BitDB. Just like how not everyone needs to run a Bitcore full node, you do not need to have to run BitDB full node.
 > For most casual developers, it is recommended that you start by using the public API.
 
 ---
@@ -15,26 +15,26 @@ In this section, we will take a look at how you can run your own BitDB node.
 
 First you need the following:
 
-1. **Bitcoin:** You must have a Bitcoin running on your computer.
+1. **Bitcore:** You must have a Bitcore running on your computer.
 2. **MongoDB:** You must have set up a MongoDB database on your computer.
 
-### 1. Bitcoin
+### 1. Bitcore
 
-BitDB sits on top of Bitcoin, therefore you need to have a Bitcoin node running.
+BitDB sits on top of Bitcore, therefore you need to have a Bitcore node running.
 
-Also, you need to configure your bitcoin node for BitDB to work, such as:
+Also, you need to configure your bitcore node for BitDB to work, such as:
 
 - Higher RPC limit
 - Zeromq broadcast setting
 - RPC username and password setting
 
-Here's an example bitcoin.conf file to get your Bitcoin node to work with BitDB:
+Here's an example bitcore.conf file to get your Bitcore node to work with BitDB:
 
 ```
 # location to store blockchain and other data.
-datadir=/data/Bitcoin
+datadir=/data/Bitcore
 dbcache=4000
-# Must set txindex=1 so Bitcoin keeps the full index
+# Must set txindex=1 so Bitcore keeps the full index
 txindex=1
 ​
 # [rpc]
@@ -44,7 +44,7 @@ server=1
 # BitDB uses these values by default, but if you can change the settings
 # By setting the config.json file in BitDB folder
 rpcuser=root
-rpcpassword=bitcoin
+rpcpassword=bitcore
 ​
 # If you want to allow remote JSON-RPC access
 rpcallowip=0.0.0.0/0

@@ -1,4 +1,4 @@
-# BitDB Documentation
+# BitDB Documentation for Bitcore (BTX)
 
 This repository compiles into the documentation website at [https://docs.bitdb.network/docs/bitdb](https://docs.bitdb.network/docs/bitdb)
 

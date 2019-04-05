@@ -32,7 +32,7 @@ Here's an example bitcore.conf file to get your Bitcore node to work with BitDB:
 
 ```
 # location to store blockchain and other data.
-datadir=/data/Bitcore
+datadir=/data/bitcore
 dbcache=4000
 # Must set txindex=1 so Bitcore keeps the full index
 txindex=1
@@ -54,8 +54,8 @@ disablewallet=1
 # [ZeroMQ]
 # ZeroMQ messages power the realtime BitDB crawler
 # so it's important to set the endpoint
-zmqpubhashtx=tcp://127.0.0.1:28332
-zmqpubhashblock=tcp://127.0.0.1:28332
+zmqpubhashtx=tcp://127.0.0.1:28556
+zmqpubhashblock=tcp://127.0.0.1:28556
 ​
 # BitDB makes heavy use of JSON-RPC so it's set to a higher number
 # But you can tweak this number as you want
@@ -66,6 +66,14 @@ rpcworkqueue=512
 
 BitDB is powered by MongoDB, so you need to have installed MongoDB already.
 
+See for mongodb docker image: https://hub.docker.com/r/bitnami/mongodb
+
+```
+$ mkdir /data
+$ chmod 777 /data
+$ docker run -d --rm --name mongodb -v /data:/bitnami bitnami/mongodb:latest
+```
+
 ---
 
 ## Install BitDB
@@ -75,7 +83,7 @@ Once you've configured all of the above, you can install BitDB.
 First, clone the repository:
 
 ```
-$ git clone https://github.com/21centurymotorcompany/bitd.git
+$ git clone https://github.com/dalijolijo/bitd-btx.git
 ```
 
 Install dependencies:
